@@ -10,15 +10,15 @@ class Main {
     //First use a simple string with a z in it
     String msg ="ABCZ";
 
-    //String encodedMsg = encode(msg);
+    String encodedMsg = encode(msg);
     
-    //System.out.println("Original msg: "+msg);
-    //System.out.println("encoded msg: "+encodedMsg);
+    System.out.println("Original msg: "+msg);
+    System.out.println("encoded msg: "+encodedMsg);
 
     // now read a file encode and save file
     //msg = Input.readFile("Original.txt");
-    //encodedMsg = encode(msg);
-    //Input.writeFile("Encode.txt",encodedMsg);
+    encodedMsg = encode(msg);
+    Input.writeFile("Encode.txt",encodedMsg);
 
     // now decode the encode message
 
